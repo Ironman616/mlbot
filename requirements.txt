@@ -11,3 +11,6 @@ shortzy
 datetime
 pytz
 aiohttp
+fuzzywuzzy
+python-Levenshtein
+
