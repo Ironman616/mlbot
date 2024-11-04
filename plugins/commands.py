@@ -150,16 +150,16 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                         [
+                   # reply_markup=InlineKeyboardMarkup(
+                      #  [
+                       #  [
                           #InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
                        #   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                       ],[
+                      # ],[
                          # InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/TeamHMT_Movies")
-                         ]
-                        ]
-                    )
+                       #  ]
+                       # ]
+                   # )
                 )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -169,16 +169,16 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                         [
+                  #  reply_markup=InlineKeyboardMarkup(
+                       # [
+                        # [
                         #  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
                           #InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                       ],[
+                      # ],[
                          # InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/TeamHMT_Movies")
-                         ]
-                        ]
-                    )
+                        # ]
+                       # ]
+                   # )
                 )
             except Exception as e:
                 logger.warning(e, exc_info=True)
@@ -326,16 +326,16 @@ async def start(client, message):
                 file_id=file_id,
                 caption=f_caption,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                     [
+                #reply_markup=InlineKeyboardMarkup(
+                   # [
+                   #  [
                       #InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
                       #InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                   ],[
+                 #  ],[
                       #InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/TeamHMT_Movies")
-                     ]
-                    ]
-                )
+                    # ]
+                   # ]
+               # )
             )
             filesarr.append(msg)
         k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie Files/Videos will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this ALL Files/Videos to your Saved Messages and Start Download there</i></b>")
@@ -462,8 +462,8 @@ async def start(client, message):
     btn = [[
         InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
     ]]
-    k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
-    await asyncio.sleep(600)
+    k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>30 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
+    await asyncio.sleep(1800)
     await msg.delete()
     await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
     return   
