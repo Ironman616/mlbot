@@ -45,7 +45,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://maxine11229:2d0NThJZDM9iSu48@cluster0.9qvbj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Maxine11229")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Movie_Loverz')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'TG_Files')
 
 #stream feature - @TeamHMT_Bots
 STREAM_BIN = environ.get("STREAM_BIN", "-1002005906539") #Log channel/Bin Channel id -100xxxxxxx
