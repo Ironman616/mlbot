@@ -43,13 +43,13 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hulkboy11220:VJr0kjLexR4xec7F@cluster0.jk957ee.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "hulkboy11220")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://johnwickk11220:3vsFKjA8I5Cljc8K@cluster0.uevz8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "johnwickk11220")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Movie_Loverz')
 
 #stream feature - @TeamHMT_Bots
 STREAM_BIN = environ.get("STREAM_BIN", "-1002005906539") #Log channel/Bin Channel id -100xxxxxxx
-STREAM_URL = environ.get("STREAM_URL", "bots.hostingup.icu:9005/") # https://example.com/ (ur Stream Url)
+STREAM_URL = environ.get("STREAM_URL", "www.movieloverzbotz.us.kg/") # https://example.com/ (ur Stream Url)
 IS_STREAM = bool(STREAM_BIN and STREAM_URL)
 #Use this feature, if you have deployed file to link bot. paste the app url with stream url and add filter bot as admin in bin channel and add id in stream bin
 
